@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8" />
+</head>
+
+<body>
+
+<script>
+
+    function readNumber() {
+        let request;
+        while (!Number.isFinite(request)) {
+            request = +prompt('Enter the number:');
+        }
+        return request === null || request === 0 ? null : request;
+    }
+
+    alert(`Число: ${readNumber()}`);
+
+</script>
+
+</body>
+
+</html>

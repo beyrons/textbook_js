@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8" />
+</head>
+
+<body>
+
+    <script>
+        const sumInput = () => {
+            let numbers = [];
+
+            while (true) {
+                let value = prompt("Введите число", '');
+                if(value === '' || value === null || !isFinite(value)) break;
+                numbers.push(+value);
+            }
+
+            return numbers.reduce((acc, curr) => acc + curr, 0);
+        }
+
+        alert( sumInput() );
+    </script>
+
+</body>
+
+</html>
+
+

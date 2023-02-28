@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8" />
+</head>
+
+<body>
+
+<script>
+    let username = prompt("login", '');
+
+    if (username === 'admin') {
+
+        let pass = prompt('password', '');
+
+        if (pass === '123') {
+            alert( 'welcome' );
+        } else if (pass === '' || pass === null) {
+            alert( 'forbidden' );
+        } else {
+            alert( 'invalid password' );
+        }
+
+    } else if (username === '' || username === null) {
+        alert( 'cancel' );
+    } else {
+        alert( "unauthorized" );
+    }
+</script>
+
+</body>
+
+</html>
+
+
+
